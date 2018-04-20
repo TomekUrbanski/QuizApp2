@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">32sp</dimen>
+    <dimen name="width_category_button">130dp</dimen>
+    <dimen name="height_category_button">130dp</dimen>
+    <dimen name="marginS_category_button">40dp</dimen>
+    <dimen name="marginT_category_button">100dp</dimen>
+    <dimen name="marginB_category_button">100dp</dimen>
+    <dimen name="marginE_category_button">40dp</dimen>
+    <dimen name="margin_first_question">25dp</dimen>
+    <dimen name="marginT_radioGroup_answer">120dp</dimen>
+    <dimen name="editText_size">42sp</dimen>
+    <dimen name="layout_height_answer_task3">200dp</dimen>
+    <dimen name="marginT_second_question">150dp</dimen>
+    <dimen name="marginT_third_question">150dp</dimen>
+    <dimen name="marginT_checkB">30dp</dimen>
+    <dimen name="marginB_checkB">30dp</dimen>
+    <dimen name="marginT_check_button">150dp</dimen>
+    <dimen name="picture_height_answer3">80dp</dimen>
+    <dimen name="marginS_grain">50dp</dimen>
+    <dimen name="marginE_picture_answer3">30dp</dimen>
+    <dimen name="marginS_picture_answer3">30dp</dimen>
+    <dimen name="mouse_diploma_height">150dp</dimen>
+    <dimen name="marginB_mouse_diploma">25dp</dimen>
+    <dimen name="marginT_mouse_diploma">80dp</dimen>
+    <dimen name="text_diploma_width">260dp</dimen>
+    <dimen name="text_size_diploma">18sp</dimen>
+    <dimen name="marginB_text_diploma">6dp</dimen>
+    <dimen name="marginE_menu_button">6dp</dimen>
+    <dimen name="marginS_tryAgein_button">6dp</dimen>
+</resources>

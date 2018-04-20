@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="first_question">What is this animal ?</string>
+    <string name="answer1_task1">Mouse</string>
+    <string name="mouse_task1">mouse</string>
+    <string name="skunk_task1">skunk</string>
+    <string name="raccon_task1">raccon</string>
+    <string name="marmot_task1">marmot</string>
+    <string name="second_question">Can you write it yourself?</string>
+    <string name="hint_editText">click here</string>
+    <string name="third_question">What eats this animal?</string>
+    <string name="check">Check</string>
+    <string name="menu">menu</string>
+    <string name="try_agein">try agein</string>
+    <string name="name_mammals_activity">MAMMALS</string>
+    <string name="diploma_task1_correct">1. Bravo! \"Mouse\" is the right answer</string>
+    <string name="diploma_task1_incorrect">1. That was the wrong answer</string>
+    <string name="diploma_empty_editText">2. You forgot to enter the name of the animal</string>
+    <string name="diploma_task2_correct">2. You did great with the spelling!</string>
+    <string name="diploma_task2_incorrect">2. Try again with the spelling</string>
+    <string name="diploma_task3_toomany">3. Not everything is good for this animal</string>
+    <string name="diploma_task3_correct">3. Good choice</string>
+    <string name="diploma_task3_almost">3. It\'s still not everything</string>
+    <string name="diploma_task3_incorrect">3. This animal does not eat it</string>
+    <string name="dolphine">dolphine</string>
+    <string name="salamon">salamon</string>
+    <string name="shark">shark</string>
+    <string name="tuna">tuna</string>
+</resources>

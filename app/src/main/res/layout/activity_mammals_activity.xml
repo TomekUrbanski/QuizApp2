@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mammals_activity"
+    >
+
+    <ScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_first_question"
+                android:textSize="@dimen/text_size"
+                android:text="@string/first_question"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mouse"
+                    />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginT_radioGroup_answer"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mouse_task1"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/skunk_task1"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rb3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/raccon_task1"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rb4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/marmot_task1"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                </RadioGroup>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginT_second_question"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/text_size"
+                android:text="@string/second_question"
+                />
+
+            <EditText
+                android:id="@+id/mouse_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:inputType="text"
+                android:hint="@string/hint_editText"
+                android:textSize="@dimen/editText_size"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginT_third_question"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/text_size"
+                android:text="@string/third_question"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_answer_task3"
+                >
+
+                <CheckBox
+                    android:id="@+id/checkbox_grains"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginT_checkB"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/picture_height_answer3"
+                    android:scaleType="fitStart"
+                    android:layout_marginStart="@dimen/marginS_grain"
+                    android:src="@drawable/grain"
+                    android:adjustViewBounds="true"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkbox_meat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginT_checkB"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/picture_height_answer3"
+                    android:scaleType="fitEnd"
+                    android:layout_marginEnd="@dimen/marginE_picture_answer3"
+                    android:src="@drawable/meat"
+                    android:adjustViewBounds="true"
+                    android:layout_alignParentEnd="true"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkbox_wege"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginB_checkB"
+                    android:layout_alignParentBottom="true"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/picture_height_answer3"
+                    android:src="@drawable/wege"
+                    android:layout_marginStart="@dimen/marginS_picture_answer3"
+                    android:scaleType="fitStart"
+                    android:adjustViewBounds="true"
+                    android:layout_alignParentBottom="true"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkbox_candy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginB_checkB"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/picture_height_answer3"
+                    android:src="@drawable/candy"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitEnd"
+                    android:layout_marginEnd="@dimen/marginE_picture_answer3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginT_check_button"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/check"
+                android:onClick="final_score"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/diploma"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/diploma"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/mouse_diploma_height"
+            android:layout_marginBottom="@dimen/marginB_mouse_diploma"
+            android:layout_marginTop="@dimen/marginT_mouse_diploma"
+            android:src="@drawable/mouse"
+            />
+
+        <TextView
+            android:id="@+id/diploma_first_task"
+            android:gravity="center_horizontal"
+            android:layout_width="@dimen/text_diploma_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginB_text_diploma"
+            android:text=""
+            android:textSize="@dimen/text_size_diploma"
+            />
+
+        <TextView
+            android:id="@+id/diploma_second_task"
+            android:gravity="center_horizontal"
+            android:layout_width="@dimen/text_diploma_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginB_text_diploma"
+            android:text=""
+            android:textSize="@dimen/text_size_diploma"
+            />
+
+        <TextView
+            android:id="@+id/diploma_third_task"
+            android:gravity="center_horizontal"
+            android:layout_width="@dimen/text_diploma_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginB_text_diploma"
+            android:text=""
+            android:textSize="@dimen/text_size_diploma"
+            />
+
+
+        <TextView
+            android:id="@+id/diploma_punctation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text=""
+            android:textSize="@dimen/text_size_diploma"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/marginE_menu_button"
+                android:text="@string/menu"
+                android:onClick="menu"
+                />
+
+            <Button
+                android:id="@+id/agein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginS_tryAgein_button"
+                android:text="@string/try_agein"
+                android:onClick="tryAgein"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
