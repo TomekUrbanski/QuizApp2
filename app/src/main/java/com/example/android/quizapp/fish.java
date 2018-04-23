@@ -26,13 +26,14 @@ public class fish extends AppCompatActivity {
         TextView first_task = findViewById(R.id.diploma_first_task);
         TextView second_task = findViewById(R.id.diploma_second_task);
         TextView third_task = findViewById(R.id.diploma_third_task);
+        TextView fourth_task = findViewById(R.id.diploma_fourth_task);
         TextView punctation = findViewById(R.id.diploma_punctation);
         RadioButton corect_answer_task1 = findViewById(R.id.rb3);
 
 
         if(corect_answer_task1.isChecked()){
             first_task.setText(R.string.diploma_task1_correct);
-            score = score+1;
+            score++;
         }else{
             first_task.setText(R.string.diploma_task1_incorrect);
         }
@@ -45,7 +46,7 @@ public class fish extends AppCompatActivity {
             second_task.setText(R.string.diploma_empty_editText);
         }else if(editText_check.equals("shark")){
             second_task.setText(R.string.diploma_task2_correct);
-            score = score + 1;
+            score++;
         }else{
             second_task.setText(R.string.diploma_task2_incorrect);
         }
@@ -62,11 +63,21 @@ public class fish extends AppCompatActivity {
             third_task.setText(R.string.diploma_task3_toomany);
         }else if(meat.isChecked()){
             third_task.setText(R.string.diploma_task3_correct);
-            score = score + 1;
+            score++;
         }else{
             third_task.setText(R.string.diploma_task3_incorrect);
         }
-        String scor = String.valueOf(score) + "/3";
+
+        RadioButton radioButton = findViewById(R.id.radioButton2);
+
+        if (radioButton.isChecked()){
+            fourth_task.setText(R.string.task4_correct);
+            score++;
+        }else{
+            fourth_task.setText(R.string.task4_incorrect);
+        }
+
+        String scor = String.valueOf(score) + "/4";
         punctation.setText(scor);
         diploma.setVisibility(View.VISIBLE);
     }

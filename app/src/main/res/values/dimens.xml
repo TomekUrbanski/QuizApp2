@@ -11,11 +11,11 @@
     <dimen name="marginT_radioGroup_answer">120dp</dimen>
     <dimen name="editText_size">42sp</dimen>
     <dimen name="layout_height_answer_task3">200dp</dimen>
-    <dimen name="marginT_second_question">150dp</dimen>
-    <dimen name="marginT_third_question">150dp</dimen>
+    <dimen name="marginT_second_question">100dp</dimen>
+    <dimen name="marginT_third_question">100dp</dimen>
     <dimen name="marginT_checkB">30dp</dimen>
     <dimen name="marginB_checkB">30dp</dimen>
-    <dimen name="marginT_check_button">150dp</dimen>
+    <dimen name="marginT_check_button">50dp</dimen>
     <dimen name="picture_height_answer3">80dp</dimen>
     <dimen name="marginS_grain">50dp</dimen>
     <dimen name="marginE_picture_answer3">30dp</dimen>

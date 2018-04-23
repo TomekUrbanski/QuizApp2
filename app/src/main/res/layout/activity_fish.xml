@@ -191,6 +191,47 @@
 
             </RelativeLayout>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marginT_second_question"
+                android:text="@string/fourth_question"
+                android:textSize="@dimen/text_size" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_4question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_5g_15g" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_100g_200g" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_1g" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_20g_60g" />
+
+            </RadioGroup>
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -254,6 +295,15 @@
             android:text=""
             android:textSize="@dimen/text_size_diploma"
             />
+
+        <TextView
+            android:id="@+id/diploma_fourth_task"
+            android:layout_width="@dimen/text_diploma_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginB_text_diploma"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textSize="@dimen/text_size_diploma" />
 
 
         <TextView

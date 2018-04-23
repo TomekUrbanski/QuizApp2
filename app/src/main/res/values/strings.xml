@@ -26,4 +26,15 @@
     <string name="salamon">salamon</string>
     <string name="shark">shark</string>
     <string name="tuna">tuna</string>
+    <string name="fourth_question">How much does this animal weigh?</string>
+    <string name="_5g_15g">5g-15g</string>
+    <string name="_100g_200g">100g-200g</string>
+    <string name="_1g">1g</string>
+    <string name="_20g_60g">20g-60g</string>
+    <string name="task4_correct">4. Correct answer</string>
+    <string name="task4_incorrect">4. Incorrect answer</string>
+    <string name="_1t">1t</string>
+    <string name="_9_5t">9.5t</string>
+    <string name="_3t">3t</string>
+    <string name="_0_5t">0.5t</string>
 </resources>

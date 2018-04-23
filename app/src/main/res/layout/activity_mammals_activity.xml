@@ -11,16 +11,16 @@
         android:id="@+id/mScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="6dp"
             android:layout_marginEnd="6dp"
-            android:orientation="vertical"
-            >
+            android:layout_marginStart="6dp"
+            android:orientation="vertical">
 
 
             <TextView
@@ -28,58 +28,50 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="@dimen/margin_first_question"
-                android:textSize="@dimen/text_size"
                 android:text="@string/first_question"
-                />
+                android:textSize="@dimen/text_size" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/mouse"
-                    />
+                    android:src="@drawable/mouse" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/marginT_radioGroup_answer"
-                    >
+                    android:layout_marginTop="@dimen/marginT_radioGroup_answer">
 
                     <RadioButton
                         android:id="@+id/rb1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/mouse_task1"
-                        android:textSize="@dimen/text_size"
-                        />
+                        android:textSize="@dimen/text_size" />
 
                     <RadioButton
                         android:id="@+id/rb2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/skunk_task1"
-                        android:textSize="@dimen/text_size"
-                        />
+                        android:textSize="@dimen/text_size" />
 
                     <RadioButton
                         android:id="@+id/rb3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/raccon_task1"
-                        android:textSize="@dimen/text_size"
-                        />
+                        android:textSize="@dimen/text_size" />
 
                     <RadioButton
                         android:id="@+id/rb4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/marmot_task1"
-                        android:textSize="@dimen/text_size"
-                        />
+                        android:textSize="@dimen/text_size" />
 
                 </RadioGroup>
             </RelativeLayout>
@@ -88,118 +80,146 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginT_second_question"
                 android:layout_gravity="center_horizontal"
-                android:textSize="@dimen/text_size"
+                android:layout_marginTop="@dimen/marginT_second_question"
                 android:text="@string/second_question"
-                />
+                android:textSize="@dimen/text_size" />
 
             <EditText
                 android:id="@+id/mouse_editText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:inputType="text"
                 android:hint="@string/hint_editText"
-                android:textSize="@dimen/editText_size"
-                />
+                android:inputType="text"
+                android:textSize="@dimen/editText_size" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginT_third_question"
                 android:layout_gravity="center_horizontal"
-                android:textSize="@dimen/text_size"
+                android:layout_marginTop="@dimen/marginT_third_question"
                 android:text="@string/third_question"
-                />
+                android:textSize="@dimen/text_size" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/layout_height_answer_task3"
-                >
+                android:layout_height="@dimen/layout_height_answer_task3">
 
                 <CheckBox
                     android:id="@+id/checkbox_grains"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/marginT_checkB"
-                    />
+                    android:layout_marginTop="@dimen/marginT_checkB" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/picture_height_answer3"
-                    android:scaleType="fitStart"
                     android:layout_marginStart="@dimen/marginS_grain"
-                    android:src="@drawable/grain"
                     android:adjustViewBounds="true"
-                    />
+                    android:scaleType="fitStart"
+                    android:src="@drawable/grain" />
 
                 <CheckBox
                     android:id="@+id/checkbox_meat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/marginT_checkB"
                     android:layout_centerHorizontal="true"
-                    />
+                    android:layout_marginTop="@dimen/marginT_checkB" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/picture_height_answer3"
-                    android:scaleType="fitEnd"
-                    android:layout_marginEnd="@dimen/marginE_picture_answer3"
-                    android:src="@drawable/meat"
-                    android:adjustViewBounds="true"
                     android:layout_alignParentEnd="true"
-                    />
+                    android:layout_marginEnd="@dimen/marginE_picture_answer3"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/meat" />
 
                 <CheckBox
                     android:id="@+id/checkbox_wege"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/marginB_checkB"
                     android:layout_alignParentBottom="true"
-                    />
+                    android:layout_marginBottom="@dimen/marginB_checkB" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/picture_height_answer3"
-                    android:src="@drawable/wege"
-                    android:layout_marginStart="@dimen/marginS_picture_answer3"
-                    android:scaleType="fitStart"
-                    android:adjustViewBounds="true"
                     android:layout_alignParentBottom="true"
-                    />
+                    android:layout_marginStart="@dimen/marginS_picture_answer3"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/wege" />
 
                 <CheckBox
                     android:id="@+id/checkbox_candy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/marginB_checkB"
-                    android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
-                    />
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/marginB_checkB" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/picture_height_answer3"
-                    android:src="@drawable/candy"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/marginE_picture_answer3"
                     android:adjustViewBounds="true"
                     android:scaleType="fitEnd"
-                    android:layout_marginEnd="@dimen/marginE_picture_answer3"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    />
+                    android:src="@drawable/candy" />
 
             </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marginT_second_question"
+                android:text="@string/fourth_question"
+                android:textSize="@dimen/text_size" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_4question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0_5t" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_3t" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_9_5t" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_1t" />
+
+            </RadioGroup>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginT_check_button"
                 android:layout_gravity="center_horizontal"
-                android:text="@string/check"
+                android:layout_marginTop="@dimen/marginT_check_button"
                 android:onClick="final_score"
-                />
+                android:text="@string/check" />
 
         </LinearLayout>
 
@@ -214,8 +234,7 @@
         android:background="@drawable/diploma"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:visibility="invisible"
-        >
+        android:visibility="invisible">
 
 
         <ImageView
@@ -223,39 +242,43 @@
             android:layout_height="@dimen/mouse_diploma_height"
             android:layout_marginBottom="@dimen/marginB_mouse_diploma"
             android:layout_marginTop="@dimen/marginT_mouse_diploma"
-            android:src="@drawable/mouse"
-            />
+            android:src="@drawable/mouse" />
 
         <TextView
             android:id="@+id/diploma_first_task"
-            android:gravity="center_horizontal"
             android:layout_width="@dimen/text_diploma_width"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/marginB_text_diploma"
+            android:gravity="center_horizontal"
             android:text=""
-            android:textSize="@dimen/text_size_diploma"
-            />
+            android:textSize="@dimen/text_size_diploma" />
 
         <TextView
             android:id="@+id/diploma_second_task"
-            android:gravity="center_horizontal"
             android:layout_width="@dimen/text_diploma_width"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/marginB_text_diploma"
+            android:gravity="center_horizontal"
             android:text=""
-            android:textSize="@dimen/text_size_diploma"
-            />
+            android:textSize="@dimen/text_size_diploma" />
 
         <TextView
             android:id="@+id/diploma_third_task"
-            android:gravity="center_horizontal"
             android:layout_width="@dimen/text_diploma_width"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/marginB_text_diploma"
+            android:gravity="center_horizontal"
             android:text=""
-            android:textSize="@dimen/text_size_diploma"
-            />
+            android:textSize="@dimen/text_size_diploma" />
 
+        <TextView
+            android:id="@+id/diploma_fourth_task"
+            android:layout_width="@dimen/text_diploma_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginB_text_diploma"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textSize="@dimen/text_size_diploma" />
 
         <TextView
             android:id="@+id/diploma_punctation"
@@ -263,32 +286,28 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:text=""
-            android:textSize="@dimen/text_size_diploma"
-            />
+            android:textSize="@dimen/text_size_diploma" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/menu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/marginE_menu_button"
-                android:text="@string/menu"
                 android:onClick="menu"
-                />
+                android:text="@string/menu" />
 
             <Button
                 android:id="@+id/agein"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/marginS_tryAgein_button"
-                android:text="@string/try_agein"
                 android:onClick="tryAgein"
-                />
+                android:text="@string/try_agein" />
 
         </LinearLayout>
 
