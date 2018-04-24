@@ -1,16 +1,16 @@
 package com.example.android.quizapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class fish extends AppCompatActivity {
 
@@ -19,10 +19,11 @@ public class fish extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fish);
     }
+
     public void final_score(View view) {
 
-        int score=0;
-        LinearLayout diploma = findViewById(R.id.diploma);
+        int score = 0;
+        ScrollView diploma = findViewById(R.id.scroll_diploma);
         TextView first_task = findViewById(R.id.diploma_first_task);
         TextView second_task = findViewById(R.id.diploma_second_task);
         TextView third_task = findViewById(R.id.diploma_third_task);
@@ -31,10 +32,10 @@ public class fish extends AppCompatActivity {
         RadioButton corect_answer_task1 = findViewById(R.id.rb3);
 
 
-        if(corect_answer_task1.isChecked()){
+        if (corect_answer_task1.isChecked()) {
             first_task.setText(R.string.diploma_task1_correct);
             score++;
-        }else{
+        } else {
             first_task.setText(R.string.diploma_task1_incorrect);
         }
 
@@ -42,12 +43,12 @@ public class fish extends AppCompatActivity {
         String editText_check = mouse_editText.getText().toString();
 
 
-        if(TextUtils.isEmpty(editText_check)){
+        if (TextUtils.isEmpty(editText_check)) {
             second_task.setText(R.string.diploma_empty_editText);
-        }else if(editText_check.equals("shark")){
+        } else if (editText_check.equals("shark")) {
             second_task.setText(R.string.diploma_task2_correct);
             score++;
-        }else{
+        } else {
             second_task.setText(R.string.diploma_task2_incorrect);
         }
 
@@ -59,27 +60,27 @@ public class fish extends AppCompatActivity {
         Boolean grain_wege_candy = grain.isChecked() || wege.isChecked() || candy.isChecked();
 
 
-        if(meat.isChecked() && grain_wege_candy) {
+        if (meat.isChecked() && grain_wege_candy) {
             third_task.setText(R.string.diploma_task3_toomany);
-        }else if(meat.isChecked()){
+        } else if (meat.isChecked()) {
             third_task.setText(R.string.diploma_task3_correct);
             score++;
-        }else{
+        } else {
             third_task.setText(R.string.diploma_task3_incorrect);
         }
 
         RadioButton radioButton = findViewById(R.id.radioButton2);
 
-        if (radioButton.isChecked()){
+        if (radioButton.isChecked()) {
             fourth_task.setText(R.string.task4_correct);
             score++;
-        }else{
+        } else {
             fourth_task.setText(R.string.task4_incorrect);
         }
 
         String scor = String.valueOf(score) + "/4";
-        punctation.setText(scor);
         diploma.setVisibility(View.VISIBLE);
+        Toast.makeText(getBaseContext(), "You`v got " + scor, Toast.LENGTH_LONG).show();
     }
 
     public void menu(View view) {
@@ -88,13 +89,12 @@ public class fish extends AppCompatActivity {
     }
 
 
-
     public void tryAgein(View view) {
 
-        LinearLayout diploma = findViewById(R.id.diploma);
+        ScrollView diploma = findViewById(R.id.scroll_diploma);
         diploma.setVisibility(View.INVISIBLE);
         ScrollView mScrollView = findViewById(R.id.mScrollView);
-        mScrollView.scrollTo(0,0);
+        mScrollView.scrollTo(0, 0);
 
     }
 

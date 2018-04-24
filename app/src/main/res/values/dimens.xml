@@ -4,8 +4,7 @@
     <dimen name="width_category_button">130dp</dimen>
     <dimen name="height_category_button">130dp</dimen>
     <dimen name="marginS_category_button">40dp</dimen>
-    <dimen name="marginT_category_button">100dp</dimen>
-    <dimen name="marginB_category_button">100dp</dimen>
+    <dimen name="marginT_category_button">150dp</dimen>
     <dimen name="marginE_category_button">40dp</dimen>
     <dimen name="margin_first_question">25dp</dimen>
     <dimen name="marginT_radioGroup_answer">120dp</dimen>
